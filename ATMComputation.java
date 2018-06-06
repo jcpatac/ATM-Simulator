@@ -5,10 +5,12 @@
 
 public class ATMComputation {
 
-    private User user = new User(20000, "John Caesar Patac"); // new instance of user class
+    // private User user = new User(20000, "John Caesar Patac"); // new instance of user class
+    private User user = new User();
 
     /*
     * Create an array of notes
+    * Each note has quantity = 100
     * */
     private Note[] notes = {new Note(1000, 100), new Note(500, 100),
             new Note(200, 100), new Note(100, 100),

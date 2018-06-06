@@ -8,10 +8,10 @@ public class User {
     private int accountBalance; // Account Balance of a user
     private String name; // The Name of the user
 
-    public User(int accountBalance, String name) { // Constructor
-        this.accountBalance = accountBalance;
-        this.name = name;
-    }
+    // public User(int accountBalance, String name) { // Constructor
+    //     this.accountBalance = accountBalance;
+    //     this.name = name;
+    // }
 
     /*
     * Getters and Setters
@@ -27,5 +27,9 @@ public class User {
 
     public void setAccountBalance(int accountBalance) {
         this.accountBalance = accountBalance;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

@@ -14,9 +14,18 @@ public class ATM {
     * Main Method
     * */
     public static void main(String[] args) throws InterruptedException {
+        Scanner scanner = new Scanner(System.in);
         ATM atm = new ATM(); // new instance of ATM class
-        System.out.println("Welcome " + atm.getAtmComputation().getUser().getName());
-        System.out.println("Your current balance is " + atm.getAtmComputation().getUser().getAccountBalance());
+
+        System.out.println("Enter Name: ");
+        atm.getAtmComputation().getUser().setName(scanner.nextLine());
+        System.out.println("Enter your starting balance: ");
+        atm.getAtmComputation().getUser().setAccountBalance(scanner.nextInt());
+        
+        System.out.println("\nWelcome " + atm.getAtmComputation().getUser().getName() + "!");
+        
+        System.out.println("Your current balance is " + atm.getAtmComputation().getUser().getAccountBalance() + "\n");
+        
         atm.askInput(); // ask for valid input
     }
 
